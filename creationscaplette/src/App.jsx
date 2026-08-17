@@ -24,7 +24,21 @@ function App() {
         </div>
       </section>
 
-      <section id="contacts">
+      <section id="skills">
+        <div className="overview">
+          <p>
+            Senior .NET Engineer with 20+ years of experience developing mobile, desktop, gaming, and enterprise applications across healthcare, industrial automation, telecommunications, and consumer software industries.
+          </p>
+          <p>
+            Specialized in C#, .NET, Xamarin, and MAUI with strong expertise in cross-platform mobile development, software architecture, REST APIs, and device integration.
+          </p>
+          <p>
+            Experienced working in international Agile teams across Europe and North America, delivering scalable solutions for both enterprise and consumer products.
+          </p>
+        </div>
+      </section>
+
+      <section id="footer">
         <div id="social">
           <h2>Connect with me</h2>
           <ul>
