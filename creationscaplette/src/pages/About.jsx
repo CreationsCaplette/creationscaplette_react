@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-import './About.css'
+import classes from './About.module.css';
 
 import davidImg from '../assets/david.jpg'
 
@@ -21,21 +21,21 @@ const skills = [
 
 function AboutPage() {
     return (
-        <div className="page-shell">
-            <header id="header">
-                <div className="header-inner">
-                    <div className="mugshot">
+        <div className={classes.pageshell}>
+            <header className={classes.header}>
+                <div className={classes.headerinner}>
+                    <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
 
-                    <div className="introduction">
-                        <p className="eyebrow">Hello, my name is</p>
+                    <div className={classes.introduction}>
+                        <p className={classes.eyebrow}>Hello, my name is</p>
                         <h1>David Caplette</h1>
-                        <p className="lead">
+                        <p className={classes.lead}>
                             I&apos;m a senior software developer specialised in building robust, scalable, cross-platform applications for modern businesses.
                         </p>
-                        <div className="actions">
-                            <a href="#contact" className="btn btn-primary">
+                        <div className={classes.actions}>
+                            <a href="#contact" className={`${classes.btn} ${classes.btnprimary}`}>
                                 Contact Me
                             </a>
                         </div>
@@ -43,9 +43,9 @@ function AboutPage() {
                 </div>
             </header>
 
-            <main className="content">
-                <section id="skills" className="section-block">
-                    <div className="section-heading">
+            <main className={classes.content}>
+                <section className={classes.sectionblock}>
+                    <div className={classes.sectionheading}>
                         <h2>Skills Overview</h2>
                         <p>
                             I have more than 20 years&apos; experience building reliable software for healthcare, industrial automation, telecommunications, and consumer products.
@@ -53,9 +53,9 @@ function AboutPage() {
                         </p>
                     </div>
 
-                    <div className="skills-grid">
+                    <div className={classes.skillsgrid}>
                         {skills.map((group) => (
-                            <article key={group.title} className="skill-card">
+                            <article key={group.title} className={classes.skillcard}>
                                 <h3>{group.title}</h3>
                                 <ul>
                                     {group.items.map((item) => (
@@ -68,8 +68,8 @@ function AboutPage() {
                 </section>
             </main>
 
-            <footer id="footer">
-                <div id="social" className="footer-inner">
+            <footer className={classes.footer}>
+                <div className={classes.footerinner}>
                     <h2>Connect with me</h2>
                     <ul>
                         <li>

@@ -1,17 +1,17 @@
-.page-shell {
+.pageshell {
   width: 100%;
   background: #f5f7fb;
   color: #1f2937;
 }
 
-#header {
+.header {
   width: 100%;
   background: linear-gradient(90deg, #1f2937 0%, #2b3a46 100%);
   color: #fff;
   padding: 24px 24px 64px;
 }
 
-.header-inner {
+.headerinner {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -46,7 +46,7 @@
   margin-bottom: 10px;
 }
 
-#header h1 {
+.header h1 {
   font-size: clamp(2.6rem, 4vw, 4rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -74,13 +74,13 @@
   transition: all 0.2s ease;
 }
 
-.btn-primary {
+.btnprimary {
   background: rgba(255, 255, 255, 0.08);
   transition: background-color 0.2s ease;
   color: #fff;
 }
 
-.btn-primary:hover {
+.btnprimary:hover {
   background: rgba(255, 255, 255, 0.14);
 }
 
@@ -90,39 +90,39 @@
   padding: 48px 24px 0;
 }
 
-.section-block {
+.sectionblock {
   padding: 24px 0 56px;
 }
 
-.section-heading {
+.sectionheading {
   margin-bottom: 30px;
 }
 
-.section-heading h2 {
+.sectionheading h2 {
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: #111827;
   margin-bottom: 12px;
 }
 
-.section-heading p {
+.sectionheading p {
   color: #4b5563;
   line-height: 1.75;
   font-size: 1.02rem;
 }
 
-.section-heading a {
+.sectionheading a {
   color: #2f9e77;
   text-decoration: none;
   font-weight: 600;
 }
 
-.skills-grid {
+.skillsgrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
-.skill-card {
+.skillcard {
   background: #ffffff;
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 14px;
@@ -130,13 +130,13 @@
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
 }
 
-.skill-card h3 {
+.skillcard h3 {
   margin: 0 0 18px;
   color: #111827;
   font-size: 1.6rem;
 }
 
-.skill-card ul {
+.skillcard ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -145,7 +145,7 @@
   gap: 8px;
 }
 
-.skill-card li {
+.skillcard li {
   background: #f3f6f9;
   color: #374151;
   border-radius: 999px;
@@ -153,25 +153,25 @@
   font-size: 0.9rem;
 }
 
-#footer {
+.footer {
   width: 100%;
   background: #1f2937;
   color: #fff;
   padding: 32px 24px;
 }
 
-.footer-inner {
+.footerinner {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-#footer h2 {
+.footer h2 {
   margin: 0 0 18px;
   color: #fff;
   font-size: 2rem;
 }
 
-#footer ul {
+.footer ul {
   list-style: none;
   display: flex;
   gap: 12px;
@@ -180,7 +180,7 @@
   flex-wrap: wrap;
 }
 
-#footer a {
+.footer a {
   color: #fff;
   text-decoration: none;
   display: inline-flex;
@@ -192,23 +192,18 @@
   transition: background-color 0.2s ease;
 }
 
-#footer a:hover {
+.footer a:hover {
   background: rgba(255, 255, 255, 0.14);
 }
 
 @media (max-width: 768px) {
-  #header {
+  .header {
     padding: 20px 20px 48px;
   }
 
-  .topbar,
-  .header-inner {
+  .headerinner {
     flex-direction: column;
     text-align: center;
-  }
-
-  .main-nav {
-    justify-content: center;
   }
 
   .introduction {
@@ -219,19 +214,19 @@
     margin: 0 auto;
   }
 
-  .skills-grid {
+  .skillsgrid {
     grid-template-columns: 1fr;
   }
 
-  .section-heading p {
+  .sectionheading p {
     text-align: center;
   }
 
-  #footer {
+  .footer {
     padding: 28px 20px;
   }
 
-  #footer ul {
+  .footer ul {
     justify-content: center;
   }
 }
