@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import classes from './About.module.css';
@@ -7,15 +9,15 @@ import davidImg from '../assets/david.jpg'
 const skills = [
     {
         title: 'Frontend',
-        items: ['C# / .NET', 'Xamarin', 'MAUI', 'Blazor', 'ASP.NET Core'],
+        items: ['C# / .NET', 'Xamarin', 'MAUI', 'React', 'JavaScript'],
     },
     {
         title: 'Backend',
-        items: ['REST APIs', 'Architecture', 'Database Design', 'Integration', 'Cloud'],
+        items: ['C# / .NET', 'REST APIs', 'Architecture', 'Database Design'],
     },
     {
         title: 'Other',
-        items: ['Agile Teams', 'DevOps', 'Testing', 'UI/UX', 'Leadership'],
+        items: ['Agile', 'Scrum', 'SAFe', 'Testing'],
     },
 ]
 
@@ -35,9 +37,9 @@ function AboutPage() {
                             I&apos;m a senior software developer specialised in building robust, scalable, cross-platform applications for modern businesses.
                         </p>
                         <div className={classes.actions}>
-                            <a href="#contact" className={`${classes.btn} ${classes.btnprimary}`}>
+                            <Link to="/contact" className={`${classes.btn} ${classes.btnprimary}`}>
                                 Contact Me
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -49,8 +51,10 @@ function AboutPage() {
                         <h2>Skills Overview</h2>
                         <p>
                             I have more than 20 years&apos; experience building reliable software for healthcare, industrial automation, telecommunications, and consumer products.
-                            <a href="#resume">Check out my online resume</a>.
                         </p>
+                        <Link to="/resume">
+                            Check out my online resume.
+                        </Link>
                     </div>
 
                     <div className={classes.skillsgrid}>
