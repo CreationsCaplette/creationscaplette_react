@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import classes from './MainNavigation.module.css';
 
@@ -6,7 +7,14 @@ function MainNavigation() {
     return (
         <header className={classes.header}>
             <nav className={classes.topbar}>
-                <div className={classes.brand}>Creations Caplette</div>
+                <ul className={classes.list}>
+                    <a href="https://linkedin.com/in/davidcaplette" target="_blank" rel="noreferrer">
+                        <FaLinkedin size={18} />
+                    </a>
+                    <a href="https://github.com/CreationsCaplette" target="_blank" rel="noreferrer">
+                        <FaGithub size={18} />
+                    </a>
+                </ul>
                 <ul className={classes.list}>
                     <li>
                         <NavLink
