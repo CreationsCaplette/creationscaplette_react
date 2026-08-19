@@ -1,0 +1,84 @@
+.pageshell {
+  width: 100%;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, #1f2937 0%, #2b3a46 100%);
+  color: #fff;
+  padding: 24px 24px 64px;
+}
+
+.headerinner {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.mugshot {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.mugshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.maininfo {
+  flex: 1;
+  text-align: left;
+}
+
+.contactlinks {
+  text-align: left;
+}
+
+.header h1 {
+  font-size: clamp(2.4rem, 3.2vw, 2.4rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header h2 {
+  font-size: clamp(1.2rem, 1.6vw, 1.2rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.header a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 999px;
+  transition: color 0.2s ease;
+}
+
+.header a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
