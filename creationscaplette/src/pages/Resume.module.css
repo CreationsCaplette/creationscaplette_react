@@ -93,52 +93,131 @@
   padding: 24px 0 24px;
 }
 
+.education,
+.languages,
+.experience {
+  padding: 24px 0;
+}
+
+.education h2,
+.languages h2 {
+  margin: 0 0 18px;
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.education ul,
+.languages ul {
+  padding: 0;
+  margin: 0;
+}
+
+.education ul {
+  list-style: none;
+}
+
+.education li {
+  margin-bottom: 20px;
+}
+
+.education > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.education p {
+  margin: 0;
+}
+
+.degree {
+  color: #1f2937;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.school {
+  margin-top: 4px !important;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.languages ul {
+  padding-left: 36px;
+}
+
+.languages li {
+  padding-left: 4px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
 .experience h2 {
   margin: 0 0 18px;
 }
 
-.experience ul {
+.experience > ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.experience li {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
-  flex-wrap: wrap;
+.experience > ul > li {
+  margin-bottom: 28px;
 }
 
-.experience li > * + *::before {
-  content: "-";
-  margin-right: 4px;
-  color: #9ca3af;
-}
-
-.company,
-.position,
-.when {
+.experience > ul > li > p {
+  display: inline;
   margin: 0;
 }
 
 .company {
-  font-size: clamp(1rem, 1.4vw, 1rem);
-  line-height: 1.05;
-  margin: 0 0 18px;
-  font-weight: 600;
+  color: #1f2937;
+  font-weight: 700;
 }
 
 .position {
-  font-size: clamp(1rem, 1.4vw, 1rem);
-  line-height: 1.05;
-  margin: 0 0 18px;
-  font-weight: 500;
+  color: #6b7280;
+  font-style: italic;
 }
 
 .when {
-  font-size: clamp(1rem, 1.4vw, 1rem);
-  line-height: 1.05;
-  margin: 0 0 18px;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.position::before,
+.when::before {
+  content: " - ";
+  color: #6b7280;
+  font-style: normal;
+}
+
+.experience > ul > li > ul:first-of-type {
+  display: block;
+  list-style: disc;
+  margin: 8px 0 10px;
+  padding-left: 36px;
+}
+
+.experience > ul > li > ul:first-of-type li {
+  display: list-item;
+  margin-bottom: 4px;
+}
+
+.experience > ul > li > ul:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #59636e;
+  font-weight: 600;
+}
+
+.experience > ul > li > ul:last-of-type li {
+  display: inline;
+}
+
+.experience > ul > li > ul:last-of-type li:not(:last-child)::after {
+  content: ",";
 }
