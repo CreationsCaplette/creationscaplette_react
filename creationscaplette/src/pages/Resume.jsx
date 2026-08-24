@@ -175,6 +175,16 @@ function ResumePage() {
     return (
         <div className={classes.pageshell}>
             <header className={classes.header}>
+                <div className={classes.headertop}>
+                    <h1>Resume</h1>
+                    <a
+                        href="/public/files/David_Caplette_CV.pdf"
+                        download
+                        className={`${classes.btn} ${classes.btnprimary}`}
+                    >
+                        Download PDF Version
+                    </a>
+                </div>
                 <div className={classes.headerinner}>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
