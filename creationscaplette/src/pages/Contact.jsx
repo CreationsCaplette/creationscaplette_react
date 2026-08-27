@@ -1,5 +1,8 @@
-import classes from './Contact.module.css';
+import { Link } from 'react-router-dom';
 
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
+import classes from './Contact.module.css';
 import davidImg from '../assets/david.jpg'
 
 function ContactPage() {
@@ -11,9 +14,74 @@ function ContactPage() {
                 </div>
             </header>
 
-            <main className={classes.content}>
+            <main>
                 <div className={classes.mugshot}>
                     <img src={davidImg} alt="David Caplette" />
+                </div>
+
+                <div className={classes.content}>
+                    <p className={classes.introduction}>
+                        Check out my <Link to="/projects">projects</Link> and <Link to="/resume">resume.</Link>
+                    </p>
+
+                    <h2>You can also find me on the following channels</h2>
+
+                    <ul className={classes.sociallinks}>
+                        <li>
+                            <a
+                                href="https://linkedin.com/in/davidcaplette"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedin size={28} />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/CreationsCaplette"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub size={28} />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className={classes.content}>
+                    <form className={classes.contactform}>
+                        <h2>Get In Touch</h2>
+
+                        <div className={classes.formrow}>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                aria-label="Name"
+                                required
+                            />
+
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                aria-label="Email"
+                                required
+                            />
+                        </div>
+
+                        <textarea
+                            name="message"
+                            placeholder="Enter your message"
+                            aria-label="Message"
+                            rows="10"
+                            required
+                        />
+
+                        <button type="submit">Send It</button>
+                    </form>
                 </div>
             </main>
         </div>
