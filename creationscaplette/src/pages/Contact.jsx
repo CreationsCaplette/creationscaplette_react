@@ -22,6 +22,7 @@ function ContactPage() {
                 <div className={classes.content}>
                     <p className={classes.introduction}>
                         Check out my <Link to="/projects">projects</Link> and <Link to="/resume">resume.</Link>
+                        You can also get in touch with me using the form below.
                     </p>
 
                     <h2>You can also find me on the following channels</h2>
@@ -76,7 +77,7 @@ function ContactPage() {
                             name="message"
                             placeholder="Enter your message"
                             aria-label="Message"
-                            rows="10"
+                            rows="5"
                             required
                         />
 
