@@ -45,14 +45,16 @@ function ProjectsPage() {
                 <section className={classes.projectgrid} aria-live="polite">
                     {filteredProjects.map((project) => (
                         <article className={classes.projectcard} key={project.title}>
-                            <img
-                                src={project.image}
-                                alt=""
-                                className={classes.projectimage}
-                            />
+                            <div className={classes.imagewrapper}>
+                                <img
+                                    src={project.image}
+                                    alt=""
+                                    className={classes.projectimage}
+                                />
+                                <h3>{project.title}</h3>
+                            </div>
 
                             <div className={classes.projectdetails}>
-                                <h3>{project.title}</h3>
                                 <p>{project.description}</p>
 
                                 <ul className={classes.technologies}>
