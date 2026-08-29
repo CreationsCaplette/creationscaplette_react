@@ -17,18 +17,10 @@
   gap: 24px;
 }
 
-.brand {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--color-white);
-}
-
 .list {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -38,7 +30,6 @@
 .list a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
