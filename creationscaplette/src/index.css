@@ -19,16 +19,22 @@
   --color-surface: #ffffff;
   --color-ink: #1f2937;
   --color-ink-soft: #334e68;
+  --color-muted: #4b5563;
   --color-border: #b8c4d2;
+  --color-subtle-ink: #111827;
+  --color-skill-pill-bg: #f3f6f9;
+  --color-skill-pill-text: #374151;
   --color-brand-dark: #1f2937;
   --color-brand-dark-2: #2b3a46;
   --color-brand-accent: #5da2ed;
   --color-brand-accent-hover: #438edb;
   --color-linkedin: #2867b2;
   --color-github: #171515;
+  --color-project-tag-bg: #1f2937;
   --shadow-soft: rgba(15, 23, 42, 0.08);
   --shadow-strong: rgba(0, 0, 0, 0.2);
   --shadow-focus: rgba(93, 162, 237, 0.2);
+  --shadow-card: rgba(15, 23, 42, 0.04);
 }
 
 * {

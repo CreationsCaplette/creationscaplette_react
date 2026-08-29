@@ -1,13 +1,17 @@
 .pageshell {
   width: 100%;
-  background: #f5f7fb;
-  color: #1f2937;
+  background: var(--color-page-bg);
+  color: var(--color-ink);
 }
 
 .header {
   width: 100%;
-  background: linear-gradient(90deg, #1f2937 0%, #2b3a46 100%);
-  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-dark) 0%,
+    var(--color-brand-dark-2) 100%
+  );
+  color: var(--color-white);
   padding: 24px 24px 64px;
 }
 
@@ -30,7 +34,7 @@
   height: auto;
   display: block;
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px var(--shadow-strong);
 }
 
 .introduction {
@@ -50,7 +54,7 @@
   font-size: clamp(2.6rem, 4vw, 4rem);
   line-height: 1.05;
   margin: 0 0 18px;
-  color: #fff;
+  color: var(--color-white);
   font-weight: 700;
 }
 
@@ -77,7 +81,7 @@
 .btnprimary {
   background: rgba(255, 255, 255, 0.08);
   transition: background-color 0.2s ease;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .btnprimary:hover {
@@ -100,18 +104,18 @@
 
 .sectionheading h2 {
   font-size: clamp(2rem, 3vw, 2.5rem);
-  color: #111827;
+  color: var(--color-subtle-ink);
   margin-bottom: 12px;
 }
 
 .sectionheading p {
-  color: #4b5563;
+  color: var(--color-muted);
   line-height: 1.75;
   font-size: 1.02rem;
 }
 
 .sectionheading a {
-  color: #1f2937;
+  color: var(--color-ink);
   text-decoration: none;
   font-weight: 600;
 }
@@ -127,16 +131,16 @@
 }
 
 .skillcard {
-  background: #ffffff;
+  background: var(--color-surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 14px;
   padding: 28px 24px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 8px 24px var(--shadow-card);
 }
 
 .skillcard h3 {
   margin: 0 0 18px;
-  color: #111827;
+  color: var(--color-subtle-ink);
   font-size: 1.6rem;
 }
 
@@ -150,8 +154,8 @@
 }
 
 .skillcard li {
-  background: #f3f6f9;
-  color: #374151;
+  background: var(--color-skill-pill-bg);
+  color: var(--color-skill-pill-text);
   border-radius: 999px;
   padding: 8px 12px;
   font-size: 0.9rem;
@@ -159,8 +163,8 @@
 
 .footer {
   width: 100%;
-  background: #1f2937;
-  color: #fff;
+  background: var(--color-brand-dark);
+  color: var(--color-white);
   padding: 32px 24px;
 }
 
@@ -171,7 +175,7 @@
 
 .footer h2 {
   margin: 0 0 18px;
-  color: #fff;
+  color: var(--color-white);
   font-size: 2rem;
 }
 
@@ -185,7 +189,7 @@
 }
 
 .footer a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -216,21 +220,5 @@
 
   .lead {
     margin: 0 auto;
-  }
-
-  .skillsgrid {
-    grid-template-columns: 1fr;
-  }
-
-  .sectionheading p {
-    text-align: center;
-  }
-
-  .footer {
-    padding: 28px 20px;
-  }
-
-  .footer ul {
-    justify-content: center;
   }
 }
