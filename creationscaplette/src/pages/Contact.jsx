@@ -85,6 +85,10 @@ function ContactPage() {
                     </form>
                 </div>
             </main>
+
+            <footer className='pageFooter'>
+                <p className='footerCopyrights'>Copyright © CreationsCaplette</p>
+            </footer>
         </div>
     )
 }

@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-
 import classes from './About.module.css';
 
 import davidImg from '../assets/david.jpg'
@@ -59,24 +57,8 @@ function AboutPage() {
                 </section>
             </main>
 
-            <footer className={classes.footer}>
-                <div className={classes.footerInner}>
-                    <h2>Connect with me</h2>
-                    <ul>
-                        <li>
-                            <a href="https://linkedin.com/in/davidcaplette" target="_blank" rel="noreferrer">
-                                <FaLinkedin size={18} />
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/CreationsCaplette" target="_blank" rel="noreferrer">
-                                <FaGithub size={18} />
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <footer className='pageFooter'>
+                <p className='footerCopyrights'>Copyright © CreationsCaplette</p>
             </footer>
         </div>
     )

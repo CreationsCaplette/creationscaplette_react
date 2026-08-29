@@ -67,6 +67,10 @@ function ProjectsPage() {
                     ))}
                 </section>
             </main>
+
+            <footer className='pageFooter'>
+                <p className='footerCopyrights'>Copyright © CreationsCaplette</p>
+            </footer>
         </div>
     )
 }

@@ -68,6 +68,8 @@ ul {
 }
 
 .pageShell {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: var(--color-page-bg);
   color: var(--color-ink);
@@ -117,9 +119,24 @@ ul {
 }
 
 .pageContent {
+  flex: 1;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 48px 24px 0;
+  padding: 24px;
+}
+
+.pageFooter {
+  width: 100%;
+  background: var(--color-brand-dark);
+  color: var(--color-white);
+  padding: 24px;
+}
+
+.footerCopyrights {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-white);
+  text-align: center;
 }
 
 .btn {
