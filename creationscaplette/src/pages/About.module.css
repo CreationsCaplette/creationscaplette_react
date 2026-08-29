@@ -1,10 +1,10 @@
-.pageshell {
+.pageShell {
   width: 100%;
   background: var(--color-page-bg);
   color: var(--color-ink);
 }
 
-.header {
+.pageHeader {
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -15,7 +15,7 @@
   padding: 24px 24px 64px;
 }
 
-.headerinner {
+.pageHeaderInner {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -50,7 +50,7 @@
   margin-bottom: 10px;
 }
 
-.header h1 {
+.pageHeader h1 {
   font-size: clamp(2.6rem, 4vw, 4rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -78,59 +78,59 @@
   transition: all 0.2s ease;
 }
 
-.btnprimary {
+.btnPrimary {
   background: rgba(255, 255, 255, 0.08);
   transition: background-color 0.2s ease;
   color: var(--color-white);
 }
 
-.btnprimary:hover {
+.btnPrimary:hover {
   background: rgba(255, 255, 255, 0.14);
 }
 
-.content {
+.pageContent {
   max-width: 1100px;
   margin: 0 auto;
   padding: 48px 24px 0;
 }
 
-.sectionblock {
+.sectionBlock {
   padding: 24px 0 56px;
 }
 
-.sectionheading {
+.sectionHeading {
   margin-bottom: 30px;
 }
 
-.sectionheading h2 {
+.sectionHeading h2 {
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: var(--color-subtle-ink);
   margin-bottom: 12px;
 }
 
-.sectionheading p {
+.sectionHeading p {
   color: var(--color-muted);
   line-height: 1.75;
   font-size: 1.02rem;
 }
 
-.sectionheading a {
+.sectionHeading a {
   color: var(--color-ink);
   text-decoration: none;
   font-weight: 600;
 }
 
-.sectionheading a:hover {
+.sectionHeading a:hover {
   text-decoration: underline;
 }
 
-.skillsgrid {
+.skillsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
-.skillcard {
+.skillCard {
   background: var(--color-surface);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 14px;
@@ -138,13 +138,13 @@
   box-shadow: 0 8px 24px var(--shadow-card);
 }
 
-.skillcard h3 {
+.skillCard h3 {
   margin: 0 0 18px;
   color: var(--color-subtle-ink);
   font-size: 1.6rem;
 }
 
-.skillcard ul {
+.skillCard ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -153,7 +153,7 @@
   gap: 8px;
 }
 
-.skillcard li {
+.skillCard li {
   background: var(--color-skill-pill-bg);
   color: var(--color-skill-pill-text);
   border-radius: 999px;
@@ -168,7 +168,7 @@
   padding: 32px 24px;
 }
 
-.footerinner {
+.footerInner {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -209,7 +209,7 @@
     padding: 20px 20px 48px;
   }
 
-  .headerinner {
+  .headerInner {
     flex-direction: column;
     text-align: center;
   }

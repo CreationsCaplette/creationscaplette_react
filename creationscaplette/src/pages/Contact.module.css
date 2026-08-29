@@ -1,10 +1,10 @@
-.pageshell {
+.pageShell {
   min-height: 100vh;
   background: var(--color-page-bg);
   color: var(--color-ink);
 }
 
-.header {
+.pageHeader {
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -15,7 +15,7 @@
   padding: 24px;
 }
 
-.headertop {
+.pageHeaderTop {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -38,7 +38,7 @@
   box-shadow: 0 10px 30px var(--shadow-strong);
 }
 
-.content {
+.pageContent {
   max-width: 768px;
   margin: 24px auto;
   padding: 24px;
@@ -52,14 +52,14 @@
   line-height: 1.6;
 }
 
-.content h2 {
+.pageContent h2 {
   margin: 24px 0 18px;
   color: var(--color-ink-soft);
   font-size: 1.15rem;
   text-align: center;
 }
 
-.sociallinks {
+.socialLinks {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -67,7 +67,7 @@
   list-style: none;
 }
 
-.sociallinks a {
+.socialLinks a {
   display: grid;
   width: 46px;
   height: 46px;
@@ -79,44 +79,44 @@
     opacity 0.2s ease;
 }
 
-.sociallinks li:first-child a {
+.socialLinks li:first-child a {
   background: var(--color-linkedin);
 }
 
-.sociallinks li:last-child a {
+.socialLinks li:last-child a {
   background: var(--color-github);
 }
 
-.sociallinks a:hover {
+.socialLinks a:hover {
   opacity: 0.85;
   transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {
-  .pageshell {
+  .pageShell {
     padding: 28px 16px 48px;
   }
 
-  .content {
+  .pageContent {
     padding: 56px 24px 64px;
   }
 }
 
-.contactform h2 {
+.contactForm h2 {
   margin: 0 0 12px;
   font-size: 2rem;
   color: var(--color-ink-soft);
 }
 
-.formrow {
+.formRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 20px;
 }
 
-.contactform input,
-.contactform textarea {
+.contactForm input,
+.contactForm textarea {
   width: 100%;
   padding: 18px 16px;
   border: 1px solid var(--color-border);
@@ -127,24 +127,24 @@
   outline: none;
 }
 
-.contactform input {
+.contactForm input {
   height: 48px;
 }
 
-.contactform textarea {
+.contactForm textarea {
   display: block;
   min-height: 64px;
   resize: vertical;
   margin-bottom: 20px;
 }
 
-.contactform input:focus,
-.contactform textarea:focus {
+.contactForm input:focus,
+.contactForm textarea:focus {
   border-color: var(--color-brand-accent);
   box-shadow: 0 0 0 2px var(--shadow-focus);
 }
 
-.contactform button {
+.contactForm button {
   width: 100%;
   padding: 15px;
   border: 0;
@@ -158,16 +158,16 @@
   transition: background-color 0.2s ease;
 }
 
-.contactform button:hover {
+.contactForm button:hover {
   background: var(--color-brand-accent-hover);
 }
 
 @media (max-width: 600px) {
-  .formrow {
+  .formRow {
     grid-template-columns: 1fr;
   }
 
-  .contactform h2 {
+  .contactForm h2 {
     font-size: 1.7rem;
   }
 }

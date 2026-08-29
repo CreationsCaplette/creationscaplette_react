@@ -7,9 +7,9 @@ import davidImg from '../assets/david.jpg'
 
 function ContactPage() {
     return (
-        <div className={classes.pageshell}>
-            <header className={classes.header}>
-                <div className={classes.headertop}>
+        <div className={classes.pageShell}>
+            <header className={classes.pageHeader}>
+                <div className={classes.pageHeaderTop}>
                     <h1>Contact</h1>
                 </div>
             </header>
@@ -19,7 +19,7 @@ function ContactPage() {
                     <img src={davidImg} alt="David Caplette" />
                 </div>
 
-                <div className={classes.content}>
+                <div className={classes.pageContent}>
                     <p className={classes.introduction}>
                         Check out my <Link to="/projects">projects</Link> and <Link to="/resume">resume.</Link>
                         You can also get in touch with me using the form below.
@@ -27,7 +27,7 @@ function ContactPage() {
 
                     <h2>You can also find me on the following channels</h2>
 
-                    <ul className={classes.sociallinks}>
+                    <ul className={classes.socialLinks}>
                         <li>
                             <a
                                 href="https://linkedin.com/in/davidcaplette"
@@ -51,11 +51,11 @@ function ContactPage() {
                     </ul>
                 </div>
 
-                <div className={classes.content}>
-                    <form className={classes.contactform}>
+                <div className={classes.pageContent}>
+                    <form className={classes.contactForm}>
                         <h2>Get In Touch</h2>
 
-                        <div className={classes.formrow}>
+                        <div className={classes.formRow}>
                             <input
                                 type="text"
                                 name="name"

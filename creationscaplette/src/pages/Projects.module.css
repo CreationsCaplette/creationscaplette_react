@@ -1,10 +1,10 @@
-.pageshell {
+.pageShell {
   min-height: 100vh;
   background: var(--color-page-bg);
   color: var(--color-ink);
 }
 
-.header {
+.pageHeader {
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -15,7 +15,7 @@
   padding: 24px;
 }
 
-.headertop {
+.pageHeaderTop {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -24,7 +24,7 @@
   gap: 18px;
 }
 
-.headertop h1 {
+.pageHeaderTop h1 {
   margin: 0;
   font-size: clamp(2.4rem, 3.2vw, 2.4rem);
   line-height: 1.05;
@@ -32,7 +32,7 @@
   font-weight: 700;
 }
 
-.headertop h2 {
+.pageHeaderTop h2 {
   margin: 0;
   font-size: clamp(1.2rem, 1.6vw, 1.2rem);
   line-height: 1.4;
@@ -40,7 +40,7 @@
   font-weight: 400;
 }
 
-.content {
+.pageContent {
   max-width: 1100px;
   margin: 0 auto;
   padding: 42px 24px 64px;
@@ -65,43 +65,43 @@
 }
 
 .filters button:hover,
-.filters .activefilter {
+.filters .activeFilter {
   background: var(--color-brand-dark);
   color: var(--color-white);
 }
 
-.projectgrid {
+.projectGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
 }
 
-.projectcard {
+.projectCard {
   overflow: hidden;
   background: var(--color-surface);
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.14);
 }
 
-.imagewrapper {
+.imageWrapper {
   position: relative;
   height: 220px;
 }
 
-.projectimage {
+.projectImage {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.imagewrapper::after {
+.imageWrapper::after {
   position: absolute;
   inset: 0;
   background: rgba(15, 23, 42, 0.5);
   content: "";
 }
 
-.imagewrapper h3 {
+.imageWrapper h3 {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -115,18 +115,18 @@
   white-space: nowrap;
 }
 
-.projectdetails {
+.projectDetails {
   padding: 18px 20px 20px;
   text-align: center;
 }
 
-.projectdetails h3 {
+.projectDetails h3 {
   margin: 0 0 14px;
   color: var(--color-ink);
   font-size: 1.35rem;
 }
 
-.projectdetails p {
+.projectDetails p {
   margin: 0 0 16px;
   color: var(--color-ink);
   line-height: 1.4;
@@ -152,17 +152,17 @@
 }
 
 @media (max-width: 800px) {
-  .projectgrid {
+  .projectGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 560px) {
-  .imagewrapper {
+  .imageWrapper {
     height: 180px;
   }
 
-  .imagewrapper h3 {
+  .imageWrapper h3 {
     font-size: 2rem;
   }
 }

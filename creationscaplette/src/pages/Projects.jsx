@@ -19,21 +19,21 @@ function ProjectsPage() {
     )
 
     return (
-        <div className={classes.pageshell}>
-            <header className={classes.header}>
-                <div className={classes.headertop}>
+        <div className={classes.pageShell}>
+            <header className={classes.pageHeader}>
+                <div className={classes.pageHeaderTop}>
                     <h1>Projects</h1>
                     <h2>Different projects or studies to show what I can do and what I am interested in</h2>
                 </div>
             </header>
 
-            <main className={classes.content}>
+            <main className={classes.pageContent}>
                 <nav className={classes.filters} aria-label="Filter projects by technology">
                     {filters.map((technology) => (
                         <button
                             key={technology}
                             type="button"
-                            className={selectedTechnology === technology ? classes.activefilter : ''}
+                            className={selectedTechnology === technology ? classes.activeFilter : ''}
                             onClick={() => setSelectedTechnology(technology)}
                             aria-pressed={selectedTechnology === technology}
                         >
@@ -42,19 +42,19 @@ function ProjectsPage() {
                     ))}
                 </nav>
 
-                <section className={classes.projectgrid} aria-live="polite">
+                <section className={classes.projectGrid} aria-live="polite">
                     {filteredProjects.map((project) => (
-                        <article className={classes.projectcard} key={project.title}>
-                            <div className={classes.imagewrapper}>
+                        <article className={classes.projectCard} key={project.title}>
+                            <div className={classes.imageWrapper}>
                                 <img
                                     src={project.image}
                                     alt=""
-                                    className={classes.projectimage}
+                                    className={classes.projectImage}
                                 />
                                 <h3>{project.title}</h3>
                             </div>
 
-                            <div className={classes.projectdetails}>
+                            <div className={classes.projectDetails}>
                                 <p>{project.description}</p>
 
                                 <ul className={classes.technologies}>

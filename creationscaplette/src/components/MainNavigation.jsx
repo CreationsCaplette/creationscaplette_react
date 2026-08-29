@@ -6,7 +6,7 @@ import classes from './MainNavigation.module.css';
 function MainNavigation() {
     return (
         <header className={classes.header}>
-            <nav className={classes.topbar}>
+            <nav className={classes.topBar}>
                 <ul className={classes.list}>
                     <a href="https://linkedin.com/in/davidcaplette" target="_blank" rel="noreferrer">
                         <FaLinkedin size={18} />

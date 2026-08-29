@@ -1,10 +1,10 @@
-.pageshell {
+.pageShell {
   width: 100%;
   background: var(--color-page-bg);
   color: var(--color-ink);
 }
 
-.header {
+.pageHeader {
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -15,7 +15,7 @@
   padding: 24px 24px 48px;
 }
 
-.headertop {
+.pageHeaderTop {
   width: 100%;
   max-width: 768px;
   margin: 0 auto 24px;
@@ -25,7 +25,7 @@
   gap: 24px;
 }
 
-.headerinner {
+.pageHeaderInner {
   max-width: 768px;
   margin: 0 auto;
   display: flex;
@@ -47,12 +47,12 @@
   box-shadow: 0 10px 30px var(--shadow-strong);
 }
 
-.maininfo {
+.mainInfo {
   flex: 1;
   text-align: left;
 }
 
-.contactlinks {
+.contactLinks {
   text-align: left;
 }
 
@@ -68,20 +68,20 @@
   transition: background-color 0.2s ease;
 }
 
-.btnprimary {
+.btnPrimary {
   background: rgba(255, 255, 255, 0.08);
   color: var(--color-white);
 }
 
-.btnprimary:hover {
+.btnPrimary:hover {
   background: rgba(255, 255, 255, 0.14);
 }
 
-.headertop h1 {
+.pageHeaderTop h1 {
   margin: 0;
 }
 
-.headerinner h1 {
+.pageHeaderInner h1 {
   font-size: clamp(2.4rem, 3.2vw, 2.4rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -89,7 +89,7 @@
   font-weight: 700;
 }
 
-.headerinner h2 {
+.pageHeaderInner h2 {
   font-size: clamp(1.2rem, 1.6vw, 1.2rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -97,7 +97,7 @@
   font-weight: 700;
 }
 
-.headerinner ul {
+.pageHeaderInner ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@
   flex-wrap: wrap;
 }
 
-.headerinner a {
+.pageHeaderInner a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   display: inline-flex;
@@ -117,19 +117,19 @@
   transition: color 0.2s ease;
 }
 
-.headerinner a:hover {
+.pageHeaderInner a:hover {
   color: var(--color-white);
   text-decoration: underline;
 }
 
-.content {
+.pageContent {
   max-width: 768px;
   margin: 0 auto;
   padding: 24px 0 0;
 }
 
-.sectionblock {
-  padding: 24px 0 24px;
+.sectionBlock {
+  padding: 24px 0;
 }
 
 .education,

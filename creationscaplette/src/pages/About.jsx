@@ -10,9 +10,9 @@ import skills from '../data/skills.js';
 
 function AboutPage() {
     return (
-        <div className={classes.pageshell}>
-            <header className={classes.header}>
-                <div className={classes.headerinner}>
+        <div className={classes.pageShell}>
+            <header className={classes.pageHeader}>
+                <div className={classes.pageHeaderInner}>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
@@ -32,9 +32,9 @@ function AboutPage() {
                 </div>
             </header>
 
-            <main className={classes.content}>
-                <section className={classes.sectionblock}>
-                    <div className={classes.sectionheading}>
+            <main className={classes.pageContent}>
+                <section className={classes.sectionBlock}>
+                    <div className={classes.sectionHeading}>
                         <h2>Skills Overview</h2>
                         <p>
                             I have more than 20 years&apos; experience building reliable software for healthcare, industrial automation, telecommunications, and consumer products.
@@ -44,9 +44,9 @@ function AboutPage() {
                         </Link>
                     </div>
 
-                    <div className={classes.skillsgrid}>
+                    <div className={classes.skillsGrid}>
                         {skills.map((group) => (
-                            <article key={group.title} className={classes.skillcard}>
+                            <article key={group.title} className={classes.skillCard}>
                                 <h3>{group.title}</h3>
                                 <ul>
                                     {group.items.map((item) => (
@@ -60,7 +60,7 @@ function AboutPage() {
             </main>
 
             <footer className={classes.footer}>
-                <div className={classes.footerinner}>
+                <div className={classes.footerInner}>
                     <h2>Connect with me</h2>
                     <ul>
                         <li>
