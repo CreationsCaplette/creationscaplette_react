@@ -24,7 +24,7 @@ function AboutPage() {
                             I&apos;m a senior software developer specialised in building robust, scalable, cross-platform applications for modern businesses.
                         </p>
                         <div className={classes.actions}>
-                            <Link to="/contact" className={`${classes.btn} ${classes.btnprimary}`}>
+                            <Link to="/contact" className={`${classes.btn} ${classes.btnPrimary}`}>
                                 Contact Me
                             </Link>
                         </div>
