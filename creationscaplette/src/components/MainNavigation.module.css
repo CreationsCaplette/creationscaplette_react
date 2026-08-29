@@ -1,30 +1,26 @@
 .header {
   width: 100%;
-  background: linear-gradient(90deg, #1f2937 0%, #2b3a46 100%);
-  color: #fff;
-  padding: 24px 24px 24px;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-dark) 0%,
+    var(--color-brand-dark-2) 100%
+  );
+  color: var(--color-white);
+  padding: 24px;
 }
 
-.topbar {
-  margin: 0 auto 0;
+.topBar {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.brand {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .list {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -34,12 +30,11 @@
 .list a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
 .list a:hover,
 .list a.active {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: underline;
 }

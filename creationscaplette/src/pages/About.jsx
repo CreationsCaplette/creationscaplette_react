@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-
 import classes from './About.module.css';
 
 import davidImg from '../assets/david.jpg'
@@ -10,9 +8,9 @@ import skills from '../data/skills.js';
 
 function AboutPage() {
     return (
-        <div className={classes.pageshell}>
-            <header className={classes.header}>
-                <div className={classes.headerinner}>
+        <div className='pageShell'>
+            <header className='pageHeader'>
+                <div className='pageHeaderInner'>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
@@ -24,7 +22,7 @@ function AboutPage() {
                             I&apos;m a senior software developer specialised in building robust, scalable, cross-platform applications for modern businesses.
                         </p>
                         <div className={classes.actions}>
-                            <Link to="/contact" className={`${classes.btn} ${classes.btnprimary}`}>
+                            <Link to="/contact" className='btn btnPrimary'>
                                 Contact Me
                             </Link>
                         </div>
@@ -32,9 +30,9 @@ function AboutPage() {
                 </div>
             </header>
 
-            <main className={classes.content}>
-                <section className={classes.sectionblock}>
-                    <div className={classes.sectionheading}>
+            <main className='pageContent'>
+                <section className='sectionBlock'>
+                    <div className='sectionHeading'>
                         <h2>Skills Overview</h2>
                         <p>
                             I have more than 20 years&apos; experience building reliable software for healthcare, industrial automation, telecommunications, and consumer products.
@@ -44,39 +42,25 @@ function AboutPage() {
                         </Link>
                     </div>
 
-                    <div className={classes.skillsgrid}>
+                    <div className='contentGrid'>
                         {skills.map((group) => (
-                            <article key={group.title} className={classes.skillcard}>
-                                <h3>{group.title}</h3>
-                                <ul>
-                                    {group.items.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
-                                </ul>
+                            <article key={group.title} className='contentCard'>
+                                <div className='contentDetails'>
+                                    <h3>{group.title}</h3>
+                                    <ul>
+                                        {group.items.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </article>
                         ))}
                     </div>
                 </section>
             </main>
 
-            <footer className={classes.footer}>
-                <div className={classes.footerinner}>
-                    <h2>Connect with me</h2>
-                    <ul>
-                        <li>
-                            <a href="https://linkedin.com/in/davidcaplette" target="_blank" rel="noreferrer">
-                                <FaLinkedin size={18} />
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/CreationsCaplette" target="_blank" rel="noreferrer">
-                                <FaGithub size={18} />
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <footer className='pageFooter'>
+                <p className='footerCopyrights'>Copyright © CreationsCaplette</p>
             </footer>
         </div>
     )

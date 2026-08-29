@@ -10,24 +10,24 @@ import experiences from '../data/experiences.js';
 
 function ResumePage() {
     return (
-        <div className={classes.pageshell}>
-            <header className={classes.header}>
-                <div className={classes.headertop}>
+        <div className='pageShell'>
+            <header className='pageHeader'>
+                <div className={classes.resumeHeaderTop}>
                     <h1>Resume</h1>
                     <a
                         href="/public/files/David_Caplette_CV.pdf"
                         download
-                        className={`${classes.btn} ${classes.btnprimary}`}
+                        className='btn btnPrimary'
                     >
                         Download PDF Version
                     </a>
                 </div>
-                <div className={classes.headerinner}>
+                <div className={classes.resumeHeaderInner}>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
 
-                    <div className={classes.maininfo}>
+                    <div className={classes.mainInfo}>
                         <h1>David Caplette</h1>
                         <h2>Senior Software Developer</h2>
                         <ul>
@@ -40,7 +40,7 @@ function ResumePage() {
                         </ul>
                     </div>
 
-                    <div className={classes.contactlinks}>
+                    <div className={classes.contactLinks}>
                         <ul>
                             <li>
                                 <a href="https://linkedin.com/in/davidcaplette" target="_blank" rel="noreferrer">
@@ -72,8 +72,8 @@ function ResumePage() {
                 </div>
             </header>
 
-            <main className={classes.content}>
-                <section className={classes.sectionblock}>
+            <main className={classes.resumeContent}>
+                <section className={classes.sectionBlock}>
                     <h2>PROFESSIONAL SUMMARY</h2>
                     <p>
                         Senior .NET Engineer with 20+ years of experience developing mobile, desktop, gaming, and
@@ -85,7 +85,7 @@ function ResumePage() {
                     </p>
                 </section>
 
-                <section className={classes.sectionblock}>
+                <section className={classes.sectionBlock}>
                     <h2>TECHNICAL SKILLS</h2>
                     <p>
                         C#, .NET, .NET Core, ASP.NET Core, MAUI, Xamarin, Blazor, React, SQL Server, SQLite, REST APIs,
@@ -139,6 +139,9 @@ function ResumePage() {
                 </section>
             </main>
 
+            <footer className='pageFooter'>
+                <p className='footerCopyrights'>Copyright © CreationsCaplette</p>
+            </footer>
         </div>
     )
 }

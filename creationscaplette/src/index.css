@@ -13,6 +13,36 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-white: #ffffff;
+  --color-page-bg: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-ink: #1f2937;
+  --color-ink-soft: #334e68;
+  --color-muted: #4b5563;
+  --color-border: #b8c4d2;
+  --color-subtle-ink: #111827;
+  --color-skill-pill-bg: #f3f6f9;
+  --color-skill-pill-text: #374151;
+  --color-brand-dark: #1f2937;
+  --color-brand-dark-2: #2b3a46;
+  --color-brand-accent: #5da2ed;
+  --color-brand-accent-hover: #438edb;
+  --color-linkedin: #2867b2;
+  --color-github: #171515;
+  --color-project-tag-bg: #1f2937;
+
+  --shadow-soft: rgba(15, 23, 42, 0.08);
+  --shadow-strong: rgba(0, 0, 0, 0.2);
+  --shadow-focus: rgba(93, 162, 237, 0.2);
+  --shadow-card: rgba(15, 23, 42, 0.04);
+
+  --text-xs: 0.8rem;
+  --text-sm: 1rem;
+  --text-md: 1.2rem;
+  --text-lg: 1.6rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.4rem;
 }
 
 * {
@@ -40,7 +70,218 @@ img {
 
 h1,
 h2,
+h3,
 p,
 ul {
   margin: 0;
+}
+
+.pageShell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-page-bg);
+  color: var(--color-ink);
+}
+
+.pageHeader {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-dark) 0%,
+    var(--color-brand-dark-2) 100%
+  );
+  color: var(--color-white);
+  padding: 24px;
+}
+
+.pageHeader h1 {
+  margin: 0;
+  font-size: var(--text-2xl);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.pageHeader h2 {
+  margin: 0;
+  font-size: var(--text-md);
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.pageHeaderTop {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.pageHeaderInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.pageContent {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.sectionBlock {
+  padding: 24px 0;
+}
+
+.sectionHeading {
+  margin-bottom: 24px;
+}
+
+.sectionHeading h2 {
+  font-size: var(--text-xl);
+  color: var(--color-subtle-ink);
+  margin-bottom: 12px;
+}
+
+.sectionHeading p {
+  color: var(--color-muted);
+}
+
+.sectionHeading a {
+  color: var(--color-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sectionHeading a:hover {
+  text-decoration: underline;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.contentStack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contentCard {
+  background: var(--color-surface);
+  border: 1px solid var(--shadow-soft);
+  border-radius: 12px;
+  padding: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px var(--shadow-card);
+}
+
+.contentImageWrapper {
+  position: relative;
+  height: 220px;
+  margin: -24px -24px 24px;
+}
+
+.contentImageWrapper::after {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  content: "";
+}
+
+.contentImageWrapper h3 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contentImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentDetails {
+  text-align: center;
+}
+
+.contentDetails h3 {
+  margin: 0 0 12px;
+  color: var(--color-ink-soft);
+  font-size: var(--text-lg);
+}
+
+.contentDetails p {
+  margin: 0 0 16px;
+  color: var(--color-ink);
+  line-height: 1.4;
+}
+
+.contentDetails ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contentDetails li {
+  background: var(--color-skill-pill-bg);
+  color: var(--color-skill-pill-text);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.pageFooter {
+  width: 100%;
+  background: var(--color-brand-dark);
+  color: var(--color-white);
+  padding: 24px;
+}
+
+.footerCopyrights {
+  margin: 0;
+  font-size: var(--text-xs);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary {
+  background: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s ease;
+  color: var(--color-white);
+}
+
+.btnPrimary:hover {
+  background: rgba(255, 255, 255, 0.14);
 }

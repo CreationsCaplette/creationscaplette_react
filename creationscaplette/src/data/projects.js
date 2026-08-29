@@ -7,7 +7,6 @@ const projects = [
         image: geoquizImage,
         technologies: ['C#', 'ASP.NET Core', 'React', 'JavaScript'],
     },
-
 ]
 
 export default projects;
