@@ -19,7 +19,7 @@ function ProjectsPage() {
     )
 
     return (
-        <div className={classes.pageShell}>
+        <div className='pageShell'>
             <header className={classes.pageHeader}>
                 <div className={classes.pageHeaderTop}>
                     <h1>Projects</h1>

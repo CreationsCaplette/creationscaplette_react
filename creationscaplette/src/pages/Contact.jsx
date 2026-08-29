@@ -7,7 +7,7 @@ import davidImg from '../assets/david.jpg'
 
 function ContactPage() {
     return (
-        <div className={classes.pageShell}>
+        <div className='pageShell'>
             <header className={classes.pageHeader}>
                 <div className={classes.pageHeaderTop}>
                     <h1>Contact</h1>

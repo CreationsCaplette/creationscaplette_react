@@ -10,7 +10,7 @@ import experiences from '../data/experiences.js';
 
 function ResumePage() {
     return (
-        <div className={classes.pageShell}>
+        <div className='pageShell'>
             <header className={classes.pageHeader}>
                 <div className={classes.pageHeaderTop}>
                     <h1>Resume</h1>

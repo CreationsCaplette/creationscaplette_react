@@ -10,7 +10,7 @@ import skills from '../data/skills.js';
 
 function AboutPage() {
     return (
-        <div className={classes.pageShell}>
+        <div className='pageShell'>
             <header className={classes.pageHeader}>
                 <div className={classes.pageHeaderInner}>
                     <div className={classes.mugshot}>
