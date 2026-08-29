@@ -1,15 +1,4 @@
-.pageHeader {
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--color-brand-dark) 0%,
-    var(--color-brand-dark-2) 100%
-  );
-  color: var(--color-white);
-  padding: 24px 24px 48px;
-}
-
-.pageHeaderTop {
+.resumeHeaderTop {
   width: 100%;
   max-width: 768px;
   margin: 0 auto 24px;
@@ -19,7 +8,7 @@
   gap: 24px;
 }
 
-.pageHeaderInner {
+.resumeHeaderInner {
   max-width: 768px;
   margin: 0 auto;
   display: flex;
@@ -50,32 +39,11 @@
   text-align: left;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.9rem 1.5rem;
-  border: 0;
-  border-radius: 999px;
-  font: inherit;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.btnPrimary {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--color-white);
-}
-
-.btnPrimary:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.pageHeaderTop h1 {
+.resumeHeaderTop h1 {
   margin: 0;
 }
 
-.pageHeaderInner h1 {
+.resumeHeaderInner h1 {
   font-size: clamp(2.4rem, 3.2vw, 2.4rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -83,7 +51,7 @@
   font-weight: 700;
 }
 
-.pageHeaderInner h2 {
+.resumeHeaderInner h2 {
   font-size: clamp(1.2rem, 1.6vw, 1.2rem);
   line-height: 1.05;
   margin: 0 0 18px;
@@ -91,7 +59,7 @@
   font-weight: 700;
 }
 
-.pageHeaderInner ul {
+.resumeHeaderInner ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -101,7 +69,7 @@
   flex-wrap: wrap;
 }
 
-.pageHeaderInner a {
+.resumeHeaderInner a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   display: inline-flex;
@@ -111,12 +79,12 @@
   transition: color 0.2s ease;
 }
 
-.pageHeaderInner a:hover {
+.resumeHeaderInner a:hover {
   color: var(--color-white);
   text-decoration: underline;
 }
 
-.pageContent {
+.resumeContent {
   max-width: 768px;
   margin: 0 auto;
   padding: 24px 0 0;

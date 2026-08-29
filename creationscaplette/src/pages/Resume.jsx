@@ -11,18 +11,18 @@ import experiences from '../data/experiences.js';
 function ResumePage() {
     return (
         <div className='pageShell'>
-            <header className={classes.pageHeader}>
-                <div className={classes.pageHeaderTop}>
+            <header className='pageHeader'>
+                <div className={classes.resumeHeaderTop}>
                     <h1>Resume</h1>
                     <a
                         href="/public/files/David_Caplette_CV.pdf"
                         download
-                        className={`${classes.btn} ${classes.btnPrimary}`}
+                        className='btn btnPrimary'
                     >
                         Download PDF Version
                     </a>
                 </div>
-                <div className={classes.pageHeaderInner}>
+                <div className={classes.resumeHeaderInner}>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
@@ -72,7 +72,7 @@ function ResumePage() {
                 </div>
             </header>
 
-            <main className={classes.pageContent}>
+            <main className={classes.resumeContent}>
                 <section className={classes.sectionBlock}>
                     <h2>PROFESSIONAL SUMMARY</h2>
                     <p>

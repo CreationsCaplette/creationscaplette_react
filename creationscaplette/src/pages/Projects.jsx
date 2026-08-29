@@ -20,14 +20,14 @@ function ProjectsPage() {
 
     return (
         <div className='pageShell'>
-            <header className={classes.pageHeader}>
-                <div className={classes.pageHeaderTop}>
+            <header className='pageHeader'>
+                <div className='pageHeaderTop'>
                     <h1>Projects</h1>
                     <h2>Different projects or studies to show what I can do and what I am interested in</h2>
                 </div>
             </header>
 
-            <main className={classes.pageContent}>
+            <main className='pageContent'>
                 <nav className={classes.filters} aria-label="Filter projects by technology">
                     {filters.map((technology) => (
                         <button

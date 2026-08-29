@@ -11,8 +11,8 @@ import skills from '../data/skills.js';
 function AboutPage() {
     return (
         <div className='pageShell'>
-            <header className={classes.pageHeader}>
-                <div className={classes.pageHeaderInner}>
+            <header className='pageHeader'>
+                <div className='pageHeaderInner'>
                     <div className={classes.mugshot}>
                         <img src={davidImg} alt="David Caplette" />
                     </div>
@@ -24,7 +24,7 @@ function AboutPage() {
                             I&apos;m a senior software developer specialised in building robust, scalable, cross-platform applications for modern businesses.
                         </p>
                         <div className={classes.actions}>
-                            <Link to="/contact" className={`${classes.btn} ${classes.btnPrimary}`}>
+                            <Link to="/contact" className='btn btnPrimary'>
                                 Contact Me
                             </Link>
                         </div>
@@ -32,7 +32,7 @@ function AboutPage() {
                 </div>
             </header>
 
-            <main className={classes.pageContent}>
+            <main className='pageContent'>
                 <section className={classes.sectionBlock}>
                     <div className={classes.sectionHeading}>
                         <h2>Skills Overview</h2>
