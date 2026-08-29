@@ -125,6 +125,34 @@ ul {
   padding: 24px;
 }
 
+.sectionBlock {
+  padding: 24px 0;
+}
+
+.sectionHeading {
+  margin-bottom: 24px;
+}
+
+.sectionHeading h2 {
+  font-size: 2rem;
+  color: var(--color-subtle-ink);
+  margin-bottom: 12px;
+}
+
+.sectionHeading p {
+  color: var(--color-muted);
+}
+
+.sectionHeading a {
+  color: var(--color-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sectionHeading a:hover {
+  text-decoration: underline;
+}
+
 .pageFooter {
   width: 100%;
   background: var(--color-brand-dark);

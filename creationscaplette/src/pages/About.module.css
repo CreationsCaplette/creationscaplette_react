@@ -35,36 +35,6 @@
   margin-top: 28px;
 }
 
-.sectionBlock {
-  padding: 24px 0 56px;
-}
-
-.sectionHeading {
-  margin-bottom: 30px;
-}
-
-.sectionHeading h2 {
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  color: var(--color-subtle-ink);
-  margin-bottom: 12px;
-}
-
-.sectionHeading p {
-  color: var(--color-muted);
-  line-height: 1.75;
-  font-size: 1.02rem;
-}
-
-.sectionHeading a {
-  color: var(--color-ink);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.sectionHeading a:hover {
-  text-decoration: underline;
-}
-
 .skillsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

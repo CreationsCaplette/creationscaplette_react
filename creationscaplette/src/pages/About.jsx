@@ -31,8 +31,8 @@ function AboutPage() {
             </header>
 
             <main className='pageContent'>
-                <section className={classes.sectionBlock}>
-                    <div className={classes.sectionHeading}>
+                <section className='sectionBlock'>
+                    <div className='sectionHeading'>
                         <h2>Skills Overview</h2>
                         <p>
                             I have more than 20 years&apos; experience building reliable software for healthcare, industrial automation, telecommunications, and consumer products.
