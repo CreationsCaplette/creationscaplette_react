@@ -13,6 +13,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-white: #ffffff;
+  --color-page-bg: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-ink: #1f2937;
+  --color-ink-soft: #334e68;
+  --color-border: #b8c4d2;
+  --color-brand-dark: #1f2937;
+  --color-brand-dark-2: #2b3a46;
+  --color-brand-accent: #5da2ed;
+  --color-brand-accent-hover: #438edb;
+  --color-linkedin: #2867b2;
+  --color-github: #171515;
+  --shadow-soft: rgba(15, 23, 42, 0.08);
+  --shadow-strong: rgba(0, 0, 0, 0.2);
+  --shadow-focus: rgba(93, 162, 237, 0.2);
 }
 
 * {

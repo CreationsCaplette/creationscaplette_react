@@ -1,13 +1,17 @@
 .pageshell {
   min-height: 100vh;
-  background: #f5f7fb;
-  color: #1f2937;
+  background: var(--color-page-bg);
+  color: var(--color-ink);
 }
 
 .header {
   width: 100%;
-  background: linear-gradient(90deg, #1f2937 0%, #2b3a46 100%);
-  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-dark) 0%,
+    var(--color-brand-dark-2) 100%
+  );
+  color: var(--color-white);
   padding: 24px;
 }
 
@@ -31,26 +35,26 @@
   height: auto;
   display: block;
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px var(--shadow-strong);
 }
 
 .content {
   max-width: 768px;
   margin: 24px auto;
   padding: 24px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  background: var(--color-surface);
+  box-shadow: 0 2px 8px var(--shadow-soft);
 }
 
 .introduction {
-  color: #334e68;
+  color: var(--color-ink-soft);
   font-size: 1.15rem;
   line-height: 1.6;
 }
 
 .content h2 {
   margin: 24px 0 18px;
-  color: #334e68;
+  color: var(--color-ink-soft);
   font-size: 1.15rem;
   text-align: center;
 }
@@ -68,7 +72,7 @@
   width: 46px;
   height: 46px;
   place-items: center;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 4px;
   transition:
     transform 0.2s ease,
@@ -76,11 +80,11 @@
 }
 
 .sociallinks li:first-child a {
-  background: #2867b2;
+  background: var(--color-linkedin);
 }
 
 .sociallinks li:last-child a {
-  background: #171515;
+  background: var(--color-github);
 }
 
 .sociallinks a:hover {
@@ -101,7 +105,7 @@
 .contactform h2 {
   margin: 0 0 12px;
   font-size: 2rem;
-  color: #334e68;
+  color: var(--color-ink-soft);
 }
 
 .formrow {
@@ -115,9 +119,9 @@
 .contactform textarea {
   width: 100%;
   padding: 18px 16px;
-  border: 1px solid #b8c4d2;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
-  color: #334e68;
+  color: var(--color-ink-soft);
   font: inherit;
   font-size: 1.1rem;
   outline: none;
@@ -136,8 +140,8 @@
 
 .contactform input:focus,
 .contactform textarea:focus {
-  border-color: #5da2ed;
-  box-shadow: 0 0 0 2px rgba(93, 162, 237, 0.2);
+  border-color: var(--color-brand-accent);
+  box-shadow: 0 0 0 2px var(--shadow-focus);
 }
 
 .contactform button {
@@ -145,8 +149,8 @@
   padding: 15px;
   border: 0;
   border-radius: 6px;
-  background: #5da2ed;
-  color: #fff;
+  background: var(--color-brand-accent);
+  color: var(--color-white);
   font: inherit;
   font-weight: 700;
   font-size: 1.1rem;
@@ -155,7 +159,7 @@
 }
 
 .contactform button:hover {
-  background: #438edb;
+  background: var(--color-brand-accent-hover);
 }
 
 @media (max-width: 600px) {
