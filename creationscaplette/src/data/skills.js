@@ -5,7 +5,7 @@ const skills = [
     },
     {
         title: 'Backend',
-        items: ['C# / .NET', 'REST APIs', 'Architecture', 'Database Design'],
+        items: ['C# / .NET', 'ASP.NET Core'],
     },
     {
         title: 'Other',
