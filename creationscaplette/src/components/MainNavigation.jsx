@@ -29,16 +29,6 @@ function MainNavigation() {
                     </li>
                     <li>
                         <NavLink
-                            to="/skills"
-                            className={({ isActive }) =>
-                                isActive ? classes.active : undefined
-                            }
-                        >
-                            Skills
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
                             to="/resume"
                             className={({ isActive }) =>
                                 isActive ? classes.active : undefined
