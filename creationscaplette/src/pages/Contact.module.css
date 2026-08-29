@@ -12,32 +12,17 @@
   box-shadow: 0 10px 30px var(--shadow-strong);
 }
 
-.pageContent {
-  max-width: 768px;
-  margin: 24px auto;
-  padding: 24px;
-  background: var(--color-surface);
-  box-shadow: 0 2px 8px var(--shadow-soft);
-}
-
 .introduction {
   color: var(--color-ink-soft);
   font-size: 1.15rem;
   line-height: 1.6;
 }
 
-.pageContent h2 {
-  margin: 24px 0 18px;
-  color: var(--color-ink-soft);
-  font-size: 1.15rem;
-  text-align: center;
-}
-
 .socialLinks {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  padding: 0;
+  gap: 24px;
+  padding: 24px 0 0;
   list-style: none;
 }
 
@@ -66,9 +51,9 @@
   transform: translateY(-2px);
 }
 
-.contactForm h2 {
+.contactForm h3 {
   margin: 0 0 12px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--color-ink-soft);
 }
 
@@ -87,7 +72,6 @@
   border-radius: 6px;
   color: var(--color-ink-soft);
   font: inherit;
-  font-size: 1.1rem;
   outline: none;
 }
 
@@ -124,14 +108,4 @@
 
 .contactForm button:hover {
   background: var(--color-brand-accent-hover);
-}
-
-@media (max-width: 600px) {
-  .formRow {
-    grid-template-columns: 1fr;
-  }
-
-  .contactForm h2 {
-    font-size: 1.7rem;
-  }
 }

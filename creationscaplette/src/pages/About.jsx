@@ -42,15 +42,17 @@ function AboutPage() {
                         </Link>
                     </div>
 
-                    <div className={classes.skillsGrid}>
+                    <div className='contentGrid'>
                         {skills.map((group) => (
-                            <article key={group.title} className={classes.skillCard}>
-                                <h3>{group.title}</h3>
-                                <ul>
-                                    {group.items.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
-                                </ul>
+                            <article key={group.title} className='contentCard'>
+                                <div className='contentDetails'>
+                                    <h3>{group.title}</h3>
+                                    <ul>
+                                        {group.items.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </article>
                         ))}
                     </div>

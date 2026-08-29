@@ -42,22 +42,22 @@ function ProjectsPage() {
                     ))}
                 </nav>
 
-                <section className={classes.projectGrid} aria-live="polite">
+                <section className='contentGrid' aria-live="polite">
                     {filteredProjects.map((project) => (
-                        <article className={classes.projectCard} key={project.title}>
-                            <div className={classes.imageWrapper}>
+                        <article className='contentCard' key={project.title}>
+                            <div className='contentImageWrapper'>
                                 <img
                                     src={project.image}
                                     alt=""
-                                    className={classes.projectImage}
+                                    className='contentImage'
                                 />
                                 <h3>{project.title}</h3>
                             </div>
 
-                            <div className={classes.projectDetails}>
+                            <div className='contentDetails'>
                                 <p>{project.description}</p>
 
-                                <ul className={classes.technologies}>
+                                <ul>
                                     {project.technologies.map((technology) => (
                                         <li key={technology}>{technology}</li>
                                     ))}
